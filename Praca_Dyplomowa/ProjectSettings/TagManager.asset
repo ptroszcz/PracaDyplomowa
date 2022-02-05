@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Tree
+  - Mountain
+  - GameBarrier
+  - DungeonEnter
+  - DungeonColumn
+  - DungeonChest
+  - GameDestination
+  - Chest
+  - Grave
+  - Spikes
+  - Home
+  - CampFire
+  - Torch
+  - Meat
+  - Bones
+  - Obelisk
+  - Potion
+  - DungeonPotion
+  - Vase
+  - BookCase
+  - Sign
+  - floor
+  - Enemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - BlockingLayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 4097769781
+    locked: 0
+  - name: Object
+    uniqueID: 1534782359
+    locked: 0
+  - name: Entity
+    uniqueID: 1081538607
+    locked: 0

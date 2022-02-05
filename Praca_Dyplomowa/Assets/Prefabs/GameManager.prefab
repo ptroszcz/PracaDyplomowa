@@ -1,0 +1,299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5563970304202621283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5563970304202621294}
+  - component: {fileID: 5563970304202621293}
+  - component: {fileID: 5563970304202621292}
+  - component: {fileID: 517250262398120336}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5563970304202621294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563970304202621283}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.04355114, y: -0.16693182, z: -0.20410244}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5563970304202621293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563970304202621283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab52116b6d2fcd4a945b9619ed67fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnDelay: 1
+  mapScript: {fileID: 0}
+  dungeonScript: {fileID: 0}
+  playerStats:
+    attack: 0
+    defence: 0
+    speed: 0
+    agility: 0
+    accuracy: 0
+    maxHealth: 10
+    healthPoints: 10
+    baseMovement: 20
+    movement: 20
+    neededExperience: 3
+    experience: 0
+    level: 1
+    baseAttack: 5
+    baseDefence: 5
+    baseSpeed: 5
+    baseAgility: 5
+    baseAccuracy: 5
+    weapon: {fileID: 1916047558943894522, guid: 5fc09de2479627c46839823d77e7ed5e, type: 3}
+    shield: {fileID: 2956562427070525579, guid: c1ddb3250a0ba7d4da3434e97a327c87, type: 3}
+    chestplate: {fileID: 3233151630315013164, guid: 7563fd7eb5355ed45a197262a826be49, type: 3}
+    helmet: {fileID: 7706115767849682350, guid: f1d0522088d85444f834fe0528eec2c6, type: 3}
+  basicStats:
+    attack: 0
+    defence: 0
+    speed: 0
+    agility: 0
+    accuracy: 0
+    maxHealth: 0
+    healthPoints: 0
+    baseMovement: 10
+    movement: 10
+    neededExperience: 3
+    experience: 0
+    level: 1
+    baseAttack: 5
+    baseDefence: 5
+    baseSpeed: 5
+    baseAgility: 5
+    baseAccuracy: 5
+    weapon: {fileID: 0}
+    shield: {fileID: 0}
+    chestplate: {fileID: 0}
+    helmet: {fileID: 0}
+  itemList:
+  - {fileID: 1069015594312535753, guid: 2822c5d64da104340a58d0b5b9bd9be4, type: 3}
+  - {fileID: 4021561888357272613, guid: 8d9e8e87fcd3d7c448c40cda8e84d638, type: 3}
+  - {fileID: 6604271860457959679, guid: f6f4b770243e72d4ebb3662268e6e31c, type: 3}
+  - {fileID: 7847855738929313786, guid: aba463648458c954d8dc974674803b08, type: 3}
+  - {fileID: 3073392606428781258, guid: d7990a2139efb0c4b8b2833febe9ecd4, type: 3}
+  - {fileID: 2799782103275849310, guid: 769c1530249eefe43a86b9459b23cd89, type: 3}
+  - {fileID: 3912229593599735210, guid: 39a859ab71c12ca4c8a8510db386b58b, type: 3}
+  - {fileID: 4519463670899049046, guid: a67f5ad428eaa56498d17da5954a5266, type: 3}
+  - {fileID: 9114226439791146278, guid: 08ec2609550d6c94ebaae50d3b772732, type: 3}
+  - {fileID: 599954582904985821, guid: 04953fe5d028e464caead10cbf70d594, type: 3}
+  - {fileID: 4645753252962158015, guid: f6643c864f8f5c249b76e48c94800418, type: 3}
+  - {fileID: 7020879306178360527, guid: c568d0d929fa7e0498b69a299e3de683, type: 3}
+  - {fileID: 3307016580784228092, guid: 14a6c8a774ad1bd40a97173c46e8734a, type: 3}
+  - {fileID: 1311708314657146452, guid: 21f75701643efbd469b49fe55844461b, type: 3}
+  - {fileID: 4394052466813572354, guid: d7b58f400b7d51049b5b6f6f9025a65b, type: 3}
+  dungeonItemList:
+  - {fileID: 5619906609655607751, guid: da93d3a10125d264fadf31eff9d913ee, type: 3}
+  - {fileID: 2024616010570262305, guid: 7b2ecad3991a7624e8a6fec521860e7d, type: 3}
+  - {fileID: 5355573127595277837, guid: 8c9b8abf1b89903479a538a9f49700d1, type: 3}
+  - {fileID: 5658061725612871636, guid: 62ffa8a28baf48d4b8efa2e32e105321, type: 3}
+  - {fileID: 7107381295204469679, guid: c07151a61729ddb42a0241d720288cae, type: 3}
+  - {fileID: 7597205736669947870, guid: 123a8fcc736a67746b6f1824cedc2035, type: 3}
+  - {fileID: 5953677965744079114, guid: 835b85109bd59ef4c98ab25643e7683f, type: 3}
+  - {fileID: 5114970129728924633, guid: 87550e31a1009084885562cb2ace85ec, type: 3}
+  - {fileID: 2031931708134781355, guid: 604aeb5c5ead4ae448b345e6cb9c9e35, type: 3}
+  - {fileID: 3293411318241240417, guid: 000365ed5ec10cc40a9ce97a129af8af, type: 3}
+  - {fileID: 3536050350019955635, guid: 37334136e2ea51747bd17b3a76119e75, type: 3}
+  - {fileID: 8879757124273855378, guid: 33ef4b3035370dd4ca6455b1144f6d5a, type: 3}
+  level: 0
+  enemiesList:
+  - {fileID: 3110621786717315556, guid: 0682628085cbd7d4d82838f75aed636f, type: 3}
+  - {fileID: 5212082126153354087, guid: 7917b29e281f28e4b8d375eb83a5314b, type: 3}
+  - {fileID: 4225122813154567214, guid: b0a2decf65dc62e4087fd2a3678b1384, type: 3}
+  - {fileID: 4984232887412777639, guid: f0acc07db29018a49aa59a7305459fa4, type: 3}
+  - {fileID: 3440703019522664305, guid: 7422a1c42b282284f901b19b7dace1b4, type: 3}
+  dungeonEnemiesList:
+  - {fileID: 4695138799052186465, guid: 34025dab696e3e740979b28009b2649a, type: 3}
+  - {fileID: 4620844897600387652, guid: 3f4a4c5931a9b7f4f83698018d2c69bd, type: 3}
+  - {fileID: 7862088221094694081, guid: 0062179342bc6c54b8982b49f15d0264, type: 3}
+  - {fileID: 645985144095715670, guid: 085507f4281196c43b0f10f05d827d86, type: 3}
+  guardian: {fileID: 1943116872321490684, guid: 5a3fefb36a2f75148b7b635141f5d26d, type: 3}
+  finalBoss: {fileID: 2060288113413007495, guid: dc739c17a6b02e347a768f2198fae78d, type: 3}
+  isPlayerTurn: 1
+  enemyTurn: 0
+--- !u!114 &5563970304202621292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563970304202621283}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa93a582c8de9c84e9c74a513fdd7e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regions:
+  - type: 0
+    height: 0.3
+    tileSprites:
+    - {fileID: 8001726403359335996, guid: f83a44a884971f846807042f8383e1c1, type: 3}
+    - {fileID: 9159171153099968737, guid: ec3b559027addd343aa5da2e7ad483e0, type: 3}
+  - type: 1
+    height: 0.35
+    tileSprites:
+    - {fileID: 7128874225261956782, guid: c4012d5860a882547b75bc3e445ce085, type: 3}
+    - {fileID: 7186484606861407535, guid: 51dfd5b807efe58459bba9bc7c516e79, type: 3}
+    - {fileID: 7275911954956924899, guid: a1a2749d8a2c20c40bff07132b1df04f, type: 3}
+    - {fileID: 4071860271580788970, guid: 871c6270a60643e48adf98a685753ba9, type: 3}
+  - type: 2
+    height: 0.48
+    tileSprites:
+    - {fileID: 6531132802930194659, guid: 7742ac3ec5e96dc448ef1620871cc94d, type: 3}
+    - {fileID: 3541320122503124776, guid: 98986286f00bbea49b402d14c3737a81, type: 3}
+  - type: 3
+    height: 0.6
+    tileSprites:
+    - {fileID: 7014920908212821616, guid: 48c4f4509d2f63448b4b6fd44344615c, type: 3}
+    - {fileID: 3627056340874165180, guid: c15c684af9fad7c4bacb7326a521f815, type: 3}
+  - type: 2
+    height: 0.78
+    tileSprites:
+    - {fileID: 2918707197822965421, guid: ad59fa0d52a5bbc438ddc1cfc50b20f9, type: 3}
+    - {fileID: 641777586788955208, guid: 522db450a4a542248b6eb84918c99166, type: 3}
+  - type: 3
+    height: 0.8
+    tileSprites:
+    - {fileID: 5308159864683369291, guid: bea16f894e792ab4fb9d112fa4504c20, type: 3}
+    - {fileID: 7840673111349256467, guid: 64828b47991a20e4899e1593582adfda, type: 3}
+  - type: 4
+    height: 1
+    tileSprites:
+    - {fileID: 5748201711337242293, guid: 13530245c7a86e040bd984e7ae0e70ca, type: 3}
+  gameBarrierTile: {fileID: 9131941775827135616, guid: b4c8f839d6d45ee47997a3f89a4cbecd, type: 3}
+  stoneTiles:
+  - {fileID: 9106800841596971802, guid: 7f55c97474f1af849a406d3199144891, type: 3}
+  - {fileID: 2886392726441619072, guid: 9f2f44ae6ad23564cb0dafd8828d0282, type: 3}
+  - {fileID: 6710064143553780934, guid: 53ad6ff59c1a97440824df0cf2f6c86b, type: 3}
+  - {fileID: 2073286903457789054, guid: 458ff3fae4ea5a14fb6e2742833c1afd, type: 3}
+  mountainTiles:
+  - {fileID: 5748201711337242293, guid: 13530245c7a86e040bd984e7ae0e70ca, type: 3}
+  - {fileID: 4669103806234517479, guid: a5f0e2f56f66d484d825fb7230db8efc, type: 3}
+  sandTiles:
+  - {fileID: 7128874225261956782, guid: c4012d5860a882547b75bc3e445ce085, type: 3}
+  - {fileID: 7186484606861407535, guid: 51dfd5b807efe58459bba9bc7c516e79, type: 3}
+  - {fileID: 7275911954956924899, guid: a1a2749d8a2c20c40bff07132b1df04f, type: 3}
+  - {fileID: 4071860271580788970, guid: 871c6270a60643e48adf98a685753ba9, type: 3}
+  treeTiles:
+  - {fileID: 5308159864683369291, guid: bea16f894e792ab4fb9d112fa4504c20, type: 3}
+  - {fileID: 7014920908212821616, guid: 48c4f4509d2f63448b4b6fd44344615c, type: 3}
+  - {fileID: 7840673111349256467, guid: 64828b47991a20e4899e1593582adfda, type: 3}
+  - {fileID: 3627056340874165180, guid: c15c684af9fad7c4bacb7326a521f815, type: 3}
+  positiveObjects:
+  - {fileID: 2280858830991165477, guid: 7bd80dfde718b014699a90f0016dea36, type: 3}
+  - {fileID: 6922825236375708608, guid: 99a04232d3e02d047a2a36b0d81e1652, type: 3}
+  - {fileID: 3243001228127795466, guid: 7303d660c04bc214981fd45325703b0f, type: 3}
+  - {fileID: 6450126923095034373, guid: eb100b6b5eaa3c64789b3adc3820f465, type: 3}
+  neutralObjects:
+  - {fileID: 2397018129194888952, guid: 431e92448c0a7644dabb62d513c0d2f9, type: 3}
+  - {fileID: 4735095738929742026, guid: 38b7d4e23b655e34ca7d062b969ca6b0, type: 3}
+  - {fileID: 6428006705173484339, guid: d90fa173608c0e844859556149a54b55, type: 3}
+  - {fileID: 4393255087374443167, guid: f8bc17e15435226488cc4e21427a2b5b, type: 3}
+  waterEdgeTile: {fileID: 9159171153099968737, guid: ec3b559027addd343aa5da2e7ad483e0, type: 3}
+  dungeonEnter: {fileID: 2441617144212173836, guid: 90cb0733e18706d4caa86a73079988c5, type: 3}
+  dungeonColumn: {fileID: 7900672044669717938, guid: c086b153b0e8c7d419be097ae312a236, type: 3}
+  dungeonChest: {fileID: 185339601451182731, guid: 42ec5cdf0bc2e2040959ce8f0f91349b, type: 3}
+  positiveObjectsRange:
+    min: 400
+    max: 600
+  neutralObjectsRange:
+    min: 300
+    max: 400
+  enemiesRange:
+    min: 200
+    max: 300
+  mapWidth: 100
+  mapHeight: 100
+  noiseScale: 50
+  octaves: 5
+  persistance: 0.5
+  lacunarity: 2
+  seed: 1500
+  offset: {x: 0, y: 0}
+--- !u!114 &517250262398120336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563970304202621283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40441d6332c3d184ba40072f8f2287f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dungeonWidth: 100
+  dungeonHeight: 100
+  roomsNumber:
+    min: 15
+    max: 20
+  roomWidth:
+    min: 3
+    max: 10
+  roomHeight:
+    min: 3
+    max: 10
+  corridorLength:
+    min: 3
+    max: 7
+  positiveObjectsRange:
+    min: 5
+    max: 10
+  neutralObjectsRange:
+    min: 20
+    max: 30
+  dungeonEnemiesRange:
+    min: 40
+    max: 60
+  floorTiles:
+  - {fileID: 4147465770470166766, guid: 8a61718e71ec0c643bc73d477699c889, type: 3}
+  - {fileID: 7285912579063056428, guid: 17981479bdc26a8419ac6cab721dc2ac, type: 3}
+  - {fileID: 658129547284976483, guid: f37421396bd9ddf45a81c57147ace89c, type: 3}
+  - {fileID: 2044875999985757325, guid: 878561e8c9635f24c80f9e5f2b76fd18, type: 3}
+  wallTiles:
+  - {fileID: 1140567051236048949, guid: 773c4d56f2b7afd49a00ad7a566a4e0b, type: 3}
+  - {fileID: 6656219594592641194, guid: 91e305f18500eff4b8411caa11daa3b4, type: 3}
+  - {fileID: 6836787884877016798, guid: 5c2bba88e0c86dd47b95019fd3a9ff5e, type: 3}
+  - {fileID: 3863871440791819669, guid: dd227e9cf30889b41ad5308d02d3f59c, type: 3}
+  - {fileID: 6271108178612692106, guid: 344e55a1ea40644409adf99d25322062, type: 3}
+  - {fileID: 7554667139910325441, guid: 8f3a9e662e5788e408042105813ef934, type: 3}
+  - {fileID: 516913384280462643, guid: 58f3840687a714845a2ff12c80dc5671, type: 3}
+  - {fileID: 3051649305163315538, guid: 6a7e8d1c1f30b5a4fb749b9b265b1cce, type: 3}
+  - {fileID: 2279433204925624597, guid: 052b92f042ee31648b682432f76cef99, type: 3}
+  positiveObjects:
+  - {fileID: 4724309066277429742, guid: 092304c91c6e82a468f25c21890607f4, type: 3}
+  - {fileID: 7566351180702959152, guid: 8ebda9ae7e6ac534cb770e8245080ff6, type: 3}
+  neutralObjects:
+  - {fileID: 185339601451182731, guid: 42ec5cdf0bc2e2040959ce8f0f91349b, type: 3}
+  - {fileID: 6395527973790488275, guid: 39a004f53c3b8d543acd26545bdb56c4, type: 3}
+  - {fileID: 6023866257559573153, guid: 5c3044ccb75231c41a95c7ba702fa39d, type: 3}
+  - {fileID: 6810291303810881662, guid: 3a57927395447764ab4eb0281044681c, type: 3}
+  - {fileID: 5404897349461365756, guid: 603bd2d1445ef814c89d4eefd491b840, type: 3}
+  - {fileID: 365104313567298147, guid: 1457e5e03a8e18d4b88a4645bd574140, type: 3}
+  finalObject: {fileID: 8302866390245608202, guid: 29beef0fa83c462459a042bd7e03482f, type: 3}
